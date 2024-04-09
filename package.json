@@ -6,15 +6,13 @@
   "scripts": {
     "start": "webpack serve --mode=development --stats-error-details --node-env development",
     "build": "webpack --mode=production --node-env production && phaser-asset-pack-hashing -r dist",
-    "editor": "phasereditor2d-launcher -project . -port 1959",
-    "editor-remote": "phasereditor2d-launcher -project . -disable-open-browser -public -port 1959",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Phaser Editor 2D <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
   "license": "MIT",
   "dependencies": {
-    "@phasereditor2d/scripts-core": "^1.0.7",
-    "@phasereditor2d/scripts-simple-animations": "^1.0.6",
+    "@phaserjs/editor-scripts-core": "^2.0.0",
+    "@phaserjs/editor-scripts-simple-animations": "2.0.0",
     "phaser": "^3.60.0"
   },
   "devDependencies": {
@@ -22,7 +20,6 @@
     "copy-webpack-plugin": "^8.1.0",
     "html-webpack-plugin": "^5.3.1",
     "phaser-asset-pack-hashing": "^1.0.5",
-    "phasereditor2d-launcher": "^3.65.0",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "webpack": "^5.28.0",
