@@ -84,11 +84,9 @@ Learn more about the [phaser-asset-pack-hashing](https://www.npmjs.com/package/p
 
 ### Coding
 
-The `/src` folder contains all the TypeScript code, including the scene and user component files, in addition to the Phaser Editor compilers output.
+The `/src` folder contains all the TypeScript code, including the scene and user component files, in addition to the Phaser Editor compiler output.
 
-We recommend using Visual Studio Code for editing the code files.
-
-In many tutorials about Phaser Editor, the JavaScript files are loaded using the Asset Pack editor. When using Webpack this is not needed. Just use the Asset Pack editor for loading the art assets.
+To edit the code, you can use any editor, but we recommend using Visual Studio Code. This project has the Visual Studio Code configuration files.
 
 ### Scene, User Components, and ScriptNode configuration
 
