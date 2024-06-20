@@ -1,6 +1,6 @@
 # Webpack + TypeScript project template for Phaser Editor v4
 
-A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor 2D v3.
+A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor v4.
 It also includes a workflow for deploying the game to GitHub Pages.
 
 ## First steps
@@ -46,23 +46,23 @@ Just follow these steps:
 
 If you don't want to deploy your game to GitHub Pages, then you can remove the `.github/workflows/main.yml` file.
 
-In this video I explain many of these concepts: [Start making a game in the cloud. GitHub + VS Code + Phaser Editor 2D [Tutorial]](https://www.youtube.com/watch?v=lndU7UAjzgo&t=183s)
+In this video I explain many of these concepts: [Start making a game in the cloud. GitHub + VS Code + Phaser Editor [Tutorial]](https://www.youtube.com/watch?v=lndU7UAjzgo&t=183s)
 
-## Phaser Editor 2D considerations
+## Phaser Editor considerations
 
 ### Excluding files from the project
 
-There are a lot of files present in the project that are not relevant to Phaser Editor 2D. For example, the whole `node_modules` folder should be excluded from the editor's project.
+There are a lot of files present in the project that are not relevant to Phaser Editor. For example, the whole `node_modules` folder should be excluded from the editor's project.
 
 The `/.skip` file lists the folders and files to exclude from the editor's project. 
 
-[Learn more about resource filtering in Phaser Editor 2D](https://help.phasereditor2d.com/v3/misc/resources-filtering.html)
+[Learn more about resource filtering in Phaser Editor](https://phaser.io/editor/docs/misc/resources-filtering)
 
 ### Setting the root folder for the game's assets
 
 The `/static` folder contains the assets (images, audio, atlases) used by the game. Webpack copies it to the distribution folder and makes it available as a root path. For example, `http://127.0.0.1:8080/assets` points to the `/static/assets` folder.
 
-By default, Phaser Editor 2D uses the project's root as the start path for the assets. You can change it by creating an empty `publicroot` file. That is the case of the `/static/publicroot` file, which allows adding files to the Asset Pack file (`/static/assets/asset-pack.json`) using correct URLs.
+By default, Phaser Editor uses the project's root as the start path for the assets. You can change it by creating an empty `publicroot` file. That is the case of the `/static/publicroot` file, which allows adding files to the Asset Pack file (`/static/assets/asset-pack.json`) using correct URLs.
 
 ### Asset Pack content hash
 
@@ -84,11 +84,11 @@ Learn more about the [phaser-asset-pack-hashing](https://www.npmjs.com/package/p
 
 ### Coding
 
-The `/src` folder contains all the TypeScript code, including the scene and user component files, in addition to the Phaser Editor 2D compilers output.
+The `/src` folder contains all the TypeScript code, including the scene and user component files, in addition to the Phaser Editor compilers output.
 
 We recommend using Visual Studio Code for editing the code files.
 
-In many tutorials about Phaser Editor 2D, the JavaScript files are loaded using the Asset Pack editor. When using Webpack this is not needed. Just use the Asset Pack editor for loading the art assets.
+In many tutorials about Phaser Editor, the JavaScript files are loaded using the Asset Pack editor. When using Webpack this is not needed. Just use the Asset Pack editor for loading the art assets.
 
 ### Scene, User Components, and ScriptNode configuration
 
@@ -105,4 +105,4 @@ You can add your script nodes to the `src/script-nodes` folder.
 
 ## About
 
-This project template was created by the Phaser Editor 2D team.
+This project template was created by the Phaser Studio team.
