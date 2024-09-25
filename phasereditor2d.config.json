@@ -1,8 +1,7 @@
 {
     "plugins": [],
     "scripts": [
-        "@phaserjs/editor-scripts-base",
-        "@phaserjs/editor-scripts-quick"
+        "@phaserjs/editor-scripts-base"
     ],
     "skip": [
         "dist"
